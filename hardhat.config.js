@@ -17,6 +17,10 @@ module.exports = {
       url: credentials.ropsten.providerUrl || '',
       accounts: { mnemonic: credentials.ropsten.mnemonic || '' },
     },
+    rinkeby: {
+      url: credentials.rinkeby.providerUrl || '',
+      accounts: { mnemonic: credentials.rinkeby.mnemonic || '' },
+    },
   },
   solidity: "0.8.4",
 };

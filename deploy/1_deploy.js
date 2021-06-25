@@ -3,7 +3,7 @@ module.exports = async ({ getUnnamedAccounts, deployments }) => {
   const accounts = await getUnnamedAccounts();
 
   const erc20Faucet = await deploy('ERC20Faucet', {
-    args: ["0xef6115b6e8461e70d26869641a228d004c67a782", "1000000000000000000000"],
+    args: ["0x4f3e1621bbf3318f441b3f9dfeca3b983ff955e5", "1000000000000000000000"],
     from: accounts[0],
   });
   log(`Deployed ERC20Faucet at ${erc20Faucet.address}`);
